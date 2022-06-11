@@ -7,9 +7,7 @@ client.on("ready", () => {
 })
 keepAlive()
 client.on("message", msg => {
-  if (msg.content === "ping") {
-    msg.reply("pong");
-  }else if (msg.content === "sus") {
+ if (msg.content === "sus") {
     msg.channel.send("Really sus");
     // only "sus" is sus enough for this bot to react
   }
